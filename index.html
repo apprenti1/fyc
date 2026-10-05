@@ -1,0 +1,2407 @@
+<html lang="fr"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programmation Embarquée et Ingénierie Électronique</title>
+  </head>
+  <body style="
+      margin: 0;
+      padding: 16px;
+      background-color: #f3f7fa;
+      color: #1a1a1a;
+      font-family:
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        sans-serif;
+      line-height: 1.6;
+    ">
+
+    <div style="
+        background-color: #0b2545;
+        color: #ffffff;
+        padding: 16px 20px;
+        border-radius: 10px;
+        margin: 8px 0;
+      ">
+      <h1 style="margin: 0; color: #ffffff; font-size: 2rem; text-align: center">
+        Programmation Embarquée et Ingénierie Électronique
+      </h1>
+    </div>
+    <div>
+      <nav aria-label="Sommaire du cours" style="
+          background-color: #ffffff;
+          border: 1px solid #c9d8e2;
+          border-left: 6px solid #0fa3b1;
+          border-radius: 10px;
+          padding: 16px 20px;
+          margin: 14px 0;
+        ">
+        <h2 style="margin: 0 0 8px 0; color: #0b2545">Sommaire</h2>
+        <ol style="margin: 0; padding-left: 22px">
+          <li>
+            <a href="#sequence-1">Séquence 1 — Présentation du cours</a>
+          </li>
+          <li>
+            <a href="#sequence-2-seance-1">Séquence 2 · Séance 1 — Théorie et cas de la valise connectée</a>
+          </li>
+          <li>
+            <a href="#sequence-2-seance-2">Séquence 2 · Séance 2 — Projet fil rouge et correction collective</a>
+          </li>
+          <li><a href="#sequence-3">Séquence 3 — Tableaux de voies de solution</a></li>
+          <li><a href="#ressources">Ressources — Prompt réutilisable et annexes</a></li>
+        </ol>
+      </nav>
+      <div style="padding:4rem;">
+        <!-- ========== SEQUENCE 1 ========== -->
+        <div id="sequence-1" style="
+            background-color: #0b2545;
+            color: #ffffff;
+            padding: 16px 20px;
+            border-radius: 10px;
+            border-left: 10px solid #f4a261;
+            margin: 8px 0;
+            ">
+            <span style="color: #f4a261; font-weight: bold; text-transform: uppercase">Séquence 1</span>
+            <h3 style="margin: 4px 0 0 0; color: #ffffff">Présentation du cours</h3>
+        </div>
+        <div style="padding:4rem;">
+    <div id="sequence-2-seance-1" style="
+            background-color: #0b2545;
+            color: #ffffff;
+            padding: 28px 24px;
+            border-radius: 12px;
+            border-bottom: 6px solid #0fa3b1;
+        ">
+        <p style="
+            margin: 0 0 6px 0;
+            color: #f4a261;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            ">
+            ESGI · Projet FYC
+        </p>
+        <h2 style="margin: 0 0 8px 0; color: #ffffff">
+            Programmation Embarquée et Ingénierie Électronique
+        </h2>
+        <p style="margin: 0; color: #dbe9f2">
+            De l'idée à l'objet fonctionnel : concevoir, souder, programmer et
+            valider son propre système embarqué, du silicium au boîtier.
+        </p>
+        </div>
+    <div style="
+            border: 3px dashed #0fa3b1;
+            border-radius: 12px;
+            padding: 22px;
+            margin: 14px 0;
+            text-align: center;
+            background-color: #f7fbfc;
+        ">
+        <p style="font-size: 2.2em; margin: 0; color: #0fa3b1">▶</p>
+        <p style="margin: 4px 0; font-weight: bold; color: #0b2545">
+            Vidéo : présentation de la matière
+        </p>
+        <p style="margin: 4px 0">
+            Emplacement de la vidéo de présentation du cours.
+        </p>
+        <p style="margin: 4px 0; color: #666666">
+            <em>Durée prévue : à renseigner. Emplacement réservé : remplacer ce
+            bloc par la vidéo.</em>
+        </p>
+        </div>
+
+
+
+
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+        ">
+            Descriptif général
+        </h3>
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+        ">
+        <p>
+            Le cours permet d'étudier la
+            <strong>conception complète d'un système embarqué</strong>, depuis
+            l'idée initiale jusqu'au produit fonctionnel et optimisé.
+        </p>
+        <p>
+            La matière est <strong>transversale</strong> : elle combine
+            l'ingénierie système, l'électronique, la programmation et la
+            configuration de machines, la programmation bas niveau et haut niveau,
+            et les méthodes de validation industrielle.
+        </p>
+        </div>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+        <thead>
+            <tr>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                Domaine
+            </th>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                Ce que l'on y fait
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Ingénierie système</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Formaliser une idée, la modéliser, justifier chaque choix.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Électronique</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Schéma, routage PCB, jusqu'à la fabrication.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Fabrication</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Impression 3D, CNC, fabrication de prototype et prototypage de
+                boîtier.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Programmation bas niveau</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Explorer le fonctionnement d'un microcontrôleur et programmer en
+                hexadécimal.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Programmation haut niveau</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Découvrir les IDE, langages et compilateurs qui existent pour
+                programmer un microcontrôleur, jusqu'au C/C++.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Validation industrielle</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Tests et contrôles pour produire une documentation technique
+                réelle du produit fini.
+            </td>
+            </tr>
+        </tbody>
+        </table>
+        
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+        ">
+            Un projet personnel, de bout en bout
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+        <thead>
+            <tr>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                Étape
+            </th>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                Description
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Une idée libre, ou un projet proposé</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Chaque étudiant (ou groupe) part d'une idée libre, ou suit un
+                projet proposé par les intervenants sur lequel il pourra suivre
+                l'évolution pour mettre en pratique les notions du cours.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Cahier des charges fonctionnel</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Traduire l'idée, ou le projet, en cahier des charges fonctionnel
+                sous forme de schémas exploitables.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Du concept au prototype abouti</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Choix des composants, code, tests, jusqu'à un objet programmé,
+                testé, boîtier compris.
+            </td>
+            </tr>
+        </tbody>
+        </table>
+        
+        
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px;
+            margin: 10px 0;
+        ">
+        <p>
+        <strong>
+            Apprendre à penser en ingénieur :</strong><br>
+        Justifier ses choix, lire la documentation technique, prototyper,
+            tester, réfléchir aux normes et aux contraintes émises par le projet,
+            et choisir et programmer son microcontrôleur. <br><br>
+        <strong>À l'issue du cours :</strong> être capable de prendre sa propre
+        idée et d'en sortir un produit électronique programmé, testé, boîtier
+        compris.
+        </p>
+        </div>
+        
+
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+        ">
+            Ce que vous saurez faire à la fin du module
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+        <thead>
+            <tr>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                Domaine
+            </th>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                Compétence
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Formalisation</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Formaliser une idée en un cahier des charges fonctionnel clair et
+                exploitable.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Modélisation</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Modéliser un système complexe avec SysML (exigences, blocs, états,
+                activités).
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Choix technologiques</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Justifier le choix d'un microcontrôleur et de ses composants
+                (tableau des voies de solution, matrice de décision).
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Documentation</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Lire et exploiter une datasheet pour configurer un composant et
+                adapter sa manière de programmer.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Conception électronique</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Concevoir un schéma électronique et router un PCB jusqu'à la
+                fabrication.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Conception mécanique</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Modéliser en 3D et prototyper un boîtier ou des pièces mécaniques.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Programmation</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Programmer en C/C++ et comprendre la traduction en binaire et en
+                hexadécimal.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Protocoles</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Analyser et mettre en œuvre I2C, SPI et UART.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Instrumentation</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Utiliser multimètre, alimentation de laboratoire et oscilloscope.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                <strong>Simulation</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #f4f8fb;
+                ">
+                Prévoir le comportement électrique et logique avant l'assemblage
+                physique.
+            </td>
+            </tr>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <strong>Optimisation</strong>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Optimiser un code en mémoire, en vitesse et en consommation.
+            </td>
+            </tr>
+        </tbody>
+        </table>
+
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+        ">
+            Peu de bagage, beaucoup de curiosité
+        </h3>
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+        ">
+        <h4 style="margin: 0 0 8px 0; color: #0b2545">Ce qu'il faut savoir</h4>
+        <ul>
+            <li>Bases en électricité : loi d'Ohm, lois de Kirchhoff.</li>
+            <li>Bases en algorithmique et programmation structurée.</li>
+            <li>Notions de logique combinatoire et séquentielle.</li>
+        </ul>
+        </div>
+        <div style="
+            background-color: #fff4e8;
+            border-left: 6px solid #f4a261;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 10px 0;
+        ">
+        <strong>Le matériel n'est pas un frein :</strong> le reste est mis à
+        disposition gratuitement, ou contre faible compensation, en Fablab.
+        Rendez-vous possible au Fablab de la Cité des Sciences (Paris 19e).
+        </div>
+
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+        ">
+            Deux temps, un seul fil conducteur
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+        <thead>
+            <tr>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                Partie 1 · Théorie
+            </th>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                Partie 2 · Pratique, Projets encadrés
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <ul>
+                <li>Présentation des outils et de leur utilisation</li>
+                <li>Méthode de choix</li>
+                <li>Structuration de la documentation technique</li>
+                <li>Bases de l'électronique</li>
+                <li>Analyse de protocoles</li>
+                <li>Fonctionnement d'un microcontrôleur</li>
+                <li>Programmation du microcontrôleur</li>
+                </ul>
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                <ul>
+                <li>
+                    Chaque intervenant (ou groupe d'intervenants) présente son
+                    propre projet
+                </li>
+                <li>Évolution suivie en direct pendant le cours</li>
+                <li>Mise en pratique concrète des méthodes vues</li>
+                <li>Idée, conception, prototype</li>
+                </ul>
+            </td>
+            </tr>
+        </tbody>
+        </table>
+
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+        ">
+            Sortir avec un produit réel : programmé, testé, boîtier compris
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+        <thead>
+            <tr>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                1 · Idée formalisée
+            </th>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                2 · Schéma et PCB
+            </th>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                3 · Code embarqué
+            </th>
+            <th style="
+                background-color: #0b2545;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid #0b2545;
+                text-align: left;
+                ">
+                4 · Tests et validation
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Cahier des charges et modèle SysML
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Conception électronique
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Programmation du microcontrôleur
+            </td>
+            <td style="
+                padding: 8px;
+                border: 1px solid #c9d8e2;
+                vertical-align: top;
+                background-color: #ffffff;
+                ">
+                Avec instrumentation de laboratoire (multimètre, alimentation,
+                oscilloscope) et simulation avant intégration finale
+            </td>
+            </tr>
+        </tbody>
+        </table>
+        </div>
+        <!-- ========== SEQUENCES 2 ========== -->
+        <div style="
+            background-color: #0b2545;
+            color: #ffffff;
+            padding: 16px 20px;
+            border-radius: 10px;
+            border-left: 10px solid #f4a261;
+            margin: 8px 0;
+            ">
+            <span style="color: #f4a261; font-weight: bold; text-transform: uppercase">Séquence 2</span>
+            <h3 style="margin: 4px 0 0 0; color: #ffffff">
+            Diagram des exigences fonctionnelles
+            </h3>
+        </div>
+        <div style="padding: 4rem;">
+            
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+            ">
+            <h4 style="margin: 0 0 8px 0; color: #0b2545">Ce que c'est</h4>
+            <p>
+            Le diagramme des exigences fonctionnelles est une variante
+            fonctionnelle du diagramme des exigences SysML. Au lieu d'écrire une
+            exigence sous forme de phrase générale (« le système doit… »), on la
+            formule comme une <strong>fonction</strong>, toujours nommée par un
+            <strong>verbe d'action</strong> : « Stocker l'énergie », « Sécuriser
+            la charge », « Mesurer l'angle de rotation ».
+            </p>
+            <p>
+            Chaque fonction porte ses propres <strong>critères chiffrés</strong>.
+            Elle se décompose en fonctions plus précises, jusqu'à ce qu'on puisse
+            associer à chaque fonction terminale une
+            <strong>voie de solution</strong> : le choix technologique concret qui
+            va la remplir.
+            </p>
+            <p>
+                
+            <strong>À retenir :</strong> on liste <em>toutes</em> les fonctions du
+            système <em>avant</em> de choisir comment. C'est le pont entre le besoin
+            et le choix technique.
+            </p>
+        </div>
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Vocabulaire
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+            <thead>
+            <tr>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Terme
+                </th>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Définition
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>Système</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                L'objet étudié, placé à la racine du diagramme (ellipse).
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                <strong>Fonction</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Ce que le système doit faire, nommé par un verbe d'action à
+                l'infinitif. Une boîte = une fonction.
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>Fonction parente</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Fonction générale qui se décompose en sous-fonctions. Elle n'a pas
+                de critère chiffré propre.
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                <strong>Fonction terminale</strong> (feuille)
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Fonction assez précise pour porter un critère chiffré et recevoir
+                une voie de solution.
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>Exigence / critère</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Contrainte mesurable attachée à une fonction terminale (autonomie,
+                masse, latence, indice IP, précision…).
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                <strong>id</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Identifiant hiérarchique unique de la boîte (1, 1.1, 1.2, 2,
+                2.1…).
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>Voie de solution</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Composant ou technologie retenus pour remplir une fonction
+                terminale. Se traite après le diagramme.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Les règles de formalisation
+        </h3>
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+            ">
+            <h4 style="margin: 0 0 8px 0; color: #0b2545">Les 10 règles</h4>
+            <ol>
+            <li>
+                Le titre d'une boîte est un
+                <strong>verbe d'action à l'infinitif suivi d'un complément</strong>.
+                Jamais un nom seul : « Stocker l'énergie », pas « Stockage d'énergie
+                ».
+            </li>
+            <li>
+                <strong>Une boîte = une seule fonction.</strong> Si le titre
+                contient un « et » qui cache deux actions, on sépare (exception pour
+                les regroupements de niveau parent : « Traiter et communiquer »).
+            </li>
+            <li>
+                Chaque boîte contient le stéréotype <strong>«requirement»</strong>,
+                entre guillemets français, dans la même cellule que le titre.
+            </li>
+            <li>
+                Chaque boîte a un <strong>id hiérarchique</strong>, dans la deuxième
+                cellule, avant la description.
+            </li>
+            <li>
+                Le contenu se lit toujours dans le même ordre : cellule 1 =
+                «requirement» + titre ; cellule 2 = id + description ; cellule 3
+                (terminales) = critères chiffrés.
+            </li>
+            <li>
+                Une fonction parente a <strong>2 cellules</strong> (pas de critère).
+                Une fonction terminale en a <strong>3</strong>.
+            </li>
+            <li>
+                Les critères sont <strong>mesurables et vérifiables</strong> : un
+                nombre et une unité (« autonomie de 2 h », « couple de 0 à 50 mN·m
+                », « latence inférieure à 100 ms »). Éviter « rapide », « petit », «
+                robuste » sans valeur.
+            </li>
+            <li>
+                On arrête de décomposer dès qu'<strong>une seule voie de solution</strong>
+                technique suffit.
+            </li>
+            <li>
+                Le système (ellipse) n'est pas une exigence : ni stéréotype, ni id.
+            </li>
+            <li>
+                Les relations sont de simples
+                <strong>flèches parent vers enfant</strong> (décomposition). On ne
+                distingue pas containment, derive et satisfy.
+            </li>
+            </ol>
+        </div>
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Anatomie d'une boîte
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+            <thead>
+            <tr>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Fonction parente
+                </th>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Fonction terminale
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>«requirement»<br>Alimenter le système</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>«requirement»<br>Stocker l'énergie</strong>
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                id: 1<br>le système doit être alimenté en énergie
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                id: 1.2<br>stocke l'énergie nécessaire au fonctionnement du
+                système
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <em>(pas de critère)</em>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                autonomie de 2 h, compacte et amovible
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+            ">
+            <h4 style="margin: 0 0 8px 0; color: #0b2545">L'ellipse racine</h4>
+            <p>
+            Elle contient uniquement le nom du système (« Valise connectée »),
+            sans stéréotype ni id.
+            </p>
+        </div>
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Catalogue de verbes d'action
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+            <thead>
+            <tr>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Famille
+                </th>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Verbes
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Énergie
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                alimenter, stocker, charger, sécuriser, réguler, convertir,
+                protéger
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Information
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                traiter, calculer, mémoriser, filtrer, décider
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Communication
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                communiquer, transmettre, recevoir, connecter, appairer
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Perception
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                détecter, mesurer, localiser, géolocaliser, identifier, valider
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Action / mouvement
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                avancer, déplacer, positionner, freiner, entraîner, contrôler
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Interaction utilisateur
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                afficher, alerter, informer, restituer, résister
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Sécurité
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                sécuriser, verrouiller, surveiller, prévenir
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="
+            background-color: #e8f7ee;
+            border-left: 6px solid #2e9e5b;
+            border-radius: 8px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            ">
+            <strong>Test rapide :</strong> devant le titre, on doit pouvoir dire «
+            le système doit… ». « Le système doit <em>stocker l'énergie</em> »
+            fonctionne.
+        </div>
+        <div style="
+            background-color: #fdecec;
+            border-left: 6px solid #d64545;
+            border-radius: 8px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            ">
+            « Le système doit <em>batterie</em> » ne fonctionne pas : on a écrit une
+            solution, pas une fonction.
+        </div>
+        
+
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Cas concret : la valise connectée
+        </h3>
+        <div style="
+            border: 3px dashed #0fa3b1;
+            border-radius: 12px;
+            padding: 22px;
+            margin: 14px 0;
+            text-align: center;
+            background-color: #f7fbfc;
+            ">
+            <p style="font-size: 2.2em; margin: 0; color: #0fa3b1">▶</p>
+            <p>
+            <strong>Vidéo : construire un diagramme sur un cas concret, la valise
+                connectée</strong>
+            </p>
+            <p>
+            Screencast draw.io avec voix : de la liste des fonctions au diagramme
+            complet.
+            </p>
+            <p>
+            <em>Emplacement réservé : intégrer la vidéo ici. Durée prévue : 10 à 15
+                min.</em>
+            </p>
+        </div>
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+            ">
+            <h4 style="margin: 0 0 8px 0; color: #0b2545">
+            Valise connectée qui suit son utilisateur
+            </h4>
+            <p>
+            Les valeurs chiffrées sont illustratives : elles montrent le niveau de
+            précision attendu.
+            </p>
+        </div>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+            <thead>
+            <tr>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                id
+                </th>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Fonction
+                </th>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Description
+                </th>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Critère
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>1</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Alimenter le système
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                le système doit être alimenté en énergie
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                (parent)
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                1.1
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Sécuriser et réguler l'alimentation
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                garantit la sécurité de l'alimentation pour le système
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                tension suffisamment stable pour ne pas endommager les autres
+                composants
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                1.2
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Stocker l'énergie
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                stocke l'énergie nécessaire au fonctionnement du système
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                autonomie de 2 h, compacte et amovible
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                1.3
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Sécuriser le chargement
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                sécurise le chargement en énergie du stockage
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                plus compact possible
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                1.4
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Charger le système
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                charge le système en énergie
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                IP68
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                1.5
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Afficher l'état de charge de la batterie
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                informe l'utilisateur du niveau de charge restant
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                IP68, le plus compact possible
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>2</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Suivre l'utilisateur
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                maintient une distance de suivi constante entre la valise et
+                l'utilisateur
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                (parent)
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                2.1
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Localiser l'utilisateur
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                détecte et suit la position de l'utilisateur en temps réel
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                distance de suivi maintenue entre 1 et 3 mètres
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                2.2
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Mesurer la vitesse
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                mesure la vitesse de déplacement pour adapter le suivi
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                plage de mesure de 0 à 8 km/h
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                2.3
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Avancer
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                déplace la valise de façon autonome vers l'utilisateur
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                vitesse maximale 8 km/h
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                <strong>3</strong>
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Sécuriser le système
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                garantit la sécurité de l'utilisateur et de la valise en cas
+                d'anomalie ou de perte
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                (parent)
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                3.1
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Alerter l'utilisateur
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                prévient l'utilisateur en cas d'anomalie (perte de contact,
+                obstacle, batterie faible)
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                alerte sonore et visuelle perceptible à 2 mètres
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                3.2
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                Géolocaliser
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                détermine la position absolue de la valise (anti-vol)
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #ffffff;
+                ">
+                précision de localisation inférieure à 10 mètres
+                </td>
+            </tr>
+            <tr>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                3.3
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                Communiquer
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                transmet les données entre la valise et l'application mobile
+                </td>
+                <td style="
+                    padding: 8px;
+                    border: 1px solid #c9d8e2;
+                    vertical-align: top;
+                    background-color: #f4f8fb;
+                ">
+                portée Bluetooth d'au moins 10 mètres
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <pre style="
+            background-color: #071a33;
+            color: #e6f1f7;
+            padding: 14px;
+            border-radius: 8px;
+            overflow: auto;
+            white-space: pre-wrap;
+            font-size: 0.85em;
+            ">Valise connectée
+    ├── 1 Alimenter le système
+    │   ├── 1.1 Sécuriser et réguler l'alimentation
+    │   ├── 1.2 Stocker l'énergie
+    │   ├── 1.3 Sécuriser le chargement
+    │   ├── 1.4 Charger le système
+    │   └── 1.5 Afficher l'état de charge de la batterie
+    ├── 2 Suivre l'utilisateur
+    │   ├── 2.1 Localiser l'utilisateur
+    │   ├── 2.2 Mesurer la vitesse
+    │   └── 2.3 Avancer
+    └── 3 Sécuriser le système
+        ├── 3.1 Alerter l'utilisateur
+        ├── 3.2 Géolocaliser
+        └── 3.3 Communiquer</pre>
+        <iframe
+            src="https://viewer.diagrams.net/?pv=0&amp;grid=0#create=%7B%22type%22%3A%22xml%22%2C%22compressed%22%3Atrue%2C%22data%22%3A%227Z1bc6O4EoB%2FjatmHzLFxcb2o%2BPJzG7V7p6pk6rdZxlkWxtARAgnOb%2F%2BtC5cBMTxxBmDWTJVE9PIQpdW96eWRCbuOnr%2BxlCy%2F4MGOJw4VvA8cb9MHGextOF%2FIXhRAm%2FmKcGOkUCJrFJwT%2F6HldDOpRkJcKplSsQpDTlJTKFP4xj73JAhxuiTmWxLw8AQJGiHjWIIwb2PQtxI9jcJ%2BF5Xy5mX8l8x2e3zJ9veUt2JUJ5YZ5zuUUCfKiL3bmKtJuKzNXHXjFJuiPIb0fMah6JNa%2B01cb6elr6oAsMxf18Ws0dnl9joz8en5P6B%2F7Ne%2F71Nb1ry1aKUv%2BTtB%2FlAV8HF7dOecHyfIF%2FceQJlAdmeRyFc2fARmifBv8UpdLeWMJrFAQ70VYg2OLxF%2FsNOytc0pAxuxTQWmW9JGOaiiePOvsy%2FLpciV87oA67c%2BWKt7%2B4c8Q0a84rcXol%2FIPczdpAPtYqv5x3v6q%2Fd6%2BrZ%2BbXSWnsB16oBDijMdAP8hUIC9S81dO1OVkus02HG8XOl7Zq9UfbJN0wjzNkLXO8rKrfQnflUqqedd3CetWVNlUCPwht74egxosfHrsj8mGKAXOvG%2B9XGOUVtoFW4qR9t6mP2bija5CZA7OETdKglfyYOlNn1vFvn69dfanqiVYdCJ2xDOTLF3R9VvPepUUNNJo4XihpztAmFtmwoC7DK1HvMhGm4tcuPRncX90V1Z0aiip4cSeVDryUoCEi8M5JOjVRl7%2BRCXYSVzhK6Sz%2BulKhq3Pg0DJE0A6vy4201e2%2Bnf6tW2FBwGHUha0j2QoOh32OjXD4oFmbN3Bl%2BzAjDkdA7ncOmyFPorFBou3lrFZJIZ2nJzklfUg7Z5ClhVIiSmGUTwmaBm5Lgh6pgPt4KKOFi7AmbsuIMq7xkBaWZgWscy%2F8w2xGjwMFJBRbCtr4QcqWpufyjzJndZs8WNXs2M83ZdNGVMbO16cLBrg4MTfNGM%2Bbjtx1q1XtCtrm3oYzv6Y7GKLwrpTVbVab5ndJEC%2F%2FBnL9oH4UyTk27ety8Nfzn3PXWq0XN8AV4izKpFyeZPY7YDvO3XMSJusNwiDg5mK3fpgiv5ZfnumIMvVS%2Bm1AS8%2FTtb5al%2Bi6%2BUfW63vSzNTMd79wpRO16eVLWzhRyni7Ln3OeIkeCqv3rbS4HS9HsP2s4uSMbjGzQYzb43EIHqXK10KnA%2BQIRsBioTEl3WaiwAVKDCrhiTqI9NFgtGneAEDvEUMyJKBQSXVcWv4SGAB8ts5WAKzsCQ6exxdk1SbPtFtpc9RnooB4eunCx%2FAzWXOBPQCOYqasyCwn4Qfnbp1FCUyQN%2FTDY6MaZeoYzcJ3O6GjxgXDkjHBU8ZFXD0dvEIwznX9ens9JN%2FbMqyPYj2XdIziajnA0wlGf4chp3kw59R8aBNQSjrgQ%2FKjyvFYcYIbUx2mKCKuAhFQrUFdfwE%2Bc40aQafaR0LToBICEw4ppJIsukc3Zy3ErsQb5XIgkjaKIHohCkmFATn8YZz4yzsczznRknJOfIh4ys8ofexi0MxtpZ6SdPtOOe0IoSPaRvxfmrprdJYHnzSLVVoh0UEdwktga0bjdB%2B5JwiwP3mjKSWiaDglw6itcHQLO8uoBh2zQgZLgvzTjynb1FXtmPwN7fq52eKObHt10n930tHlTeb9jCxgXcs6qII1ynLln4%2BxikQSSe4uh%2BFK3P74039V6xc60h27TG6MFJz9l%2BpFP6SZcEK%2B2W%2BLvMVtr8zkCyAgg%2FQWQWfNmrsATcx1CTdU5kssL5TQ9v5LbNTaIQ2E6WTsh8ZayqL54AnOqkKSIY7lWIqMDMdhXlDUqwXDKkRkEuRDQ%2FPZd0Mw6By0zfDAZXvRg1gnx4Da7PJLOO0mnxcuNiHPSU7xpY9vtVWDNfUYObLg4c%2FJYUJL%2FQGUIF%2F0nvH%2Fb%2BbAE%2FCC0vsQahn3wLbsQfy%2BFIxX1loqc5q1c%2B1%2BHi4sDT4TArhC1SJLJ7aQBEQjjF0iWQqGJRIlYso0K3qiDOBLXDvnpP7kN44SqXTN2LOcdHMvBVbN5xcdw%2BrhIUXFJvV2ViH%2BnvhxkbLCecwwEDMHltZ0dqehuj%2FxeoAMRuLKDEDwdz50aTJeJPgjSOChihgPkQgbHUSLm2%2FpIjHg%2FxMUjAK85bunicZxVHbed19kVCcBg4cEcDpnPOwkM1Ez0j3ppY2b07woCGC139fP%2FthOxHzTpX5ybc0eT%2Fr%2BAPtJ0uLP%2BkV0GwS4tE%2FY%2FcJoxRS5yppsr8uWn6bIgjXIoR69ZJglhkOj9jvpYBwpQUn2nhyKCDvYyonKJp6iKvJJGQxRffABHbT1EUIb9UGCkHi64EIwYFveaUKSXEYJKa%2FY3RLA6CPYfAwSjk%2B21k205UVBobldBAOk4J%2FVotnRPWySTzGUgQB9FxMp%2FiOn%2BhwW7z65KiQQReiYRkno%2BPH9q2904VMO6XpND7XqBv2y3cWZ%2FJGvHcz9f4zbFe1ycuhq5Y%2BSOvnJHC3Xctx4a7O6chH5lVbEAcdo7q2pLEcWuytrCvKAXX74mKqh8GQHMQBKRghZbGRPhyQeDC7NlJ8v1plW84hX7rtfmqw05SID4oJdl2t7izKy7OucQClMw4sOID33Gh7Z9DYXm9mhXQ6L3Hxz0jr43di0cRYJPmgT0CQfQaXmQQJwwoJsULoROiqvyuIa1ReKIwS8dxD9QqEub0piyYkvHgaQZaLIGGx8nXJ2BKNccxJgb1gYI2112EyNRA8J5b5DEhKZ%2FF%2BhU3OD1Y45ikfJtTc5PCZlMm8RzFSETyCyk%2Fgg8I%2FD0GXic5s1vii2E9ub7tbrbtskiEheBjspmTbRJaZiZ50mLOMin%2FA2XImHMyc2Bhl3ASo5pPkmrW0xVu%2BbvHyfxVqUCtFIbJgpmEa9YGBq0zLuBFmWNR2Z5B7OUjmxEltOesvjAp3REL2saRVlMHrMxZjMiTL8RpmXRx9Dei8MLZyhOI3VKUv5ljoDGsT4wov6Ex0mnKlGShMTPMSGiG%2FKetzqcDzHgsoo%2F9GjdwgjglMqeNAJKmSwjidOBckt9helC3FLR5OuEl17u9Kx5t%2F5wzXEieL%2Bjl%2FLKn%2BXNcyr%2FzrF7938%3D%22%2C%22effect%22%3A%22pop%22%7D"
+            title="Diagramme des exigences fonctionnelles de la valise connectée"
+            loading="lazy"
+            style="
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            border: 1px solid #c9d8e2;
+            border-radius: 8px;
+            margin: 10px 0;
+            background-color: #ffffff;
+            "></iframe>
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Projet fil rouge : annonce et correction collective
+        </h3>
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+            ">
+            <h4 style="margin: 0 0 8px 0; color: #0b2545">
+            Annonce du projet fil rouge : le Smart Knob
+            </h4>
+            <p>
+            Le projet fil rouge de la matière est un <strong>Smart Knob</strong> :
+            un bouton rotatif connecté dont la sensation au toucher est
+            entièrement programmable.
+            </p>
+        </div>
+        <div style="
+            border: 3px dashed #0fa3b1;
+            border-radius: 12px;
+            padding: 22px;
+            margin: 14px 0;
+            text-align: center;
+            background-color: #f7fbfc;
+            ">
+            <p style="font-size: 2.2em; margin: 0; color: #0fa3b1">▶</p>
+            <p>
+            <strong>Vidéo : présentation du projet Smart Knob</strong>
+            </p>
+            <p>
+            Démonstration de l'objet fini : rotation, crans, butées, appui et
+            affichage.
+            </p>
+            <p>
+            <em>Emplacement réservé : intégrer la vidéo ici.</em>
+            </p>
+        </div>
+        <h4 style="margin: 16px 0 8px 0; color: #0b2545">
+            Présentation du projet
+        </h4>
+        <p>
+            Un bouton rotatif classique a une sensation figée par sa mécanique : des
+            crans réguliers, ou aucun. Le Smart Knob remplace cette mécanique par un
+            <strong>moteur piloté en temps réel</strong>. Le moteur applique un
+            couple sur l'axe en fonction de sa position : il peut simuler des crans
+            plus ou moins marqués, une butée de fin de course, un ressort qui ramène
+            au centre, ou une rotation totalement libre. Le comportement change
+            selon le contexte, sans toucher au matériel.
+        </p>
+        <p>
+            Au centre du bouton, un écran rond affiche la valeur réglée ou le mode
+            en cours. Un appui sur le bouton sert à valider. L'objet peut piloter
+            un volume, une lumière, un curseur dans une application, ou tout autre
+            réglage via une liaison sans fil.
+        </p>
+        <div style="
+            background-color: #fff4e8;
+            border-left: 6px solid #f4a261;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 10px 0;
+            ">
+            Le Smart Knob réunit tout le contenu de la matière : rédiger son cahier
+            des charges fonctionnel, souder la carte, programmer le
+            microcontrôleur et régler l'asservissement du moteur.
+        </div>
+        <h4 style="margin: 16px 0 8px 0; color: #0b2545">
+            Correction : diagramme des exigences fonctionnelles du Smart Knob
+        </h4>
+        <iframe
+            src="https://viewer.diagrams.net/?pv=0&amp;grid=0#create=%7B%22type%22%3A%22xml%22%2C%22compressed%22%3Atrue%2C%22data%22%3A%227Z1bb%2BM2FoB%2FjTC7D1noFid5tJ1ktkBbFDO7LdA3WqJtbiRRw4sn7q9f3nSz5DTRWJYFc4pBpSORPtQ5%2FHR4SGqcYJm%2BfiYg3%2F6CY5g4wZMTLAnGTB%2Blr0uYJI7votgJHh3fd8Vfx38%2BctVTV90cEJix9xRQv9QqY6qhbJ9ALRGlUE7FyeL7FjH4NQeRvPJdKC5kW5YKzR89cUi3IIc%2FZRTF0EgI5lkMY3OWgBVMFiB62Sj5EieYiEsZzmTla5Qkhcjxg9vHu%2BeHB1krI%2FgF1q48usunJ1%2BWwBmryb25%2FE%2FII0526kfdsvgfKGZbIQlMsa%2BmeV5xjv5Sp%2FfiXD%2BAHUi4eQA%2FZQyStWy178Y4xQx94%2FJYNNccqgKQMPhae4jmqX%2BGOIWM7GUBiDbb4jl72jrud6OaOPNDIyuq8V0j2GvBjRBpAaBasilrrywtDoyxuw2fd7hK2%2ByiMaxp3y7zN62TyPbdxIC8%2FEMYxFV%2FHF8oFMxmC%2F%2F5%2BZ8Hdjamx%2BLZrRP8XUjk1Y86Tj83aJnZ8WeJbDEDq0Sad4VJDHWls29c9sqFVx02LFdel829bdxUs%2Fkbd0XCQjmIY5RtGreGjbsq6xRCo8LcVCnMZX6ukuhm3EQ4SYDqxvPqcFGvfrYx%2F9dPYYXjfUtIWpKtdEZh96yhVwRln%2Bmofek78wWB3zgiMJXeJwSLsrZVWf88Qampw1XWoHsqbg6c%2BX0Ki9uFo8vfb2okhW0125L4Q4rLvjMXJby2qh3qCUwgwVZXSeaMQP1busFC9CDOYVbc8JBBskGNVsXvapUUdplJyrUTF%2FI%2BgLpvA6qUmWqCAz6F9yegk2%2FpZOl02XT6DwFIswnKbh7hNOWZDAXIiGjy23oypadCKJVdLFtjkgKGcCZPY94Gl2qPvluzKdqCbKP4tYNRAWOir1EIeDMmmhzBPM8fAGGBRZhF2GUj7FF3YQYjE2R9QrJGEEk6jEixoK1qXFO1pJNWVGFMCT9xhhJEAYNcNofyMnJcYc5kk1yCmWDfeoqUug8HoFRoKWUpddmU%2BgIpQ0zFVS5XfRgyrLp2lXwZDVVhW981UOM%2BAikVhREpwii3A1E8q4dSiDKQqRQT5kVjNxzFQAVf%2BXZPTdYph1kMMhWmgRJqTWRPhGoCB6enWuTZ7JbF2oVj7asZW3GCaDWMNCjY8MREZCZl1Orf5855%2Fasj67UBRFAIlRyiVZOqHJcJzZrtcHNcBWfH0nrvQ9gPN5HBjGqlKF%2BvBZtTZTbpjKafGGUVq3NAVeJODHhTwWVSBaOcEXUQ4TTHVDwYOiUeG%2FwG%2Fkn4a%2FN3lr%2BXzl%2BGoxcD2WMp%2BLNDtiN%2FR5WeHWq6mcGtCDQB0vMLMmwU3qrGxRk0HOvI8Z0dskCOv3Gq9FZvBNk1tqrnKmACPa5X70CQ4h3SsJsMPotw1h0EpzaXaHF66Tg9DGeVSaItIBvDoRGx2pFQpHV9u9Ttmpw1KJVE1mPyS0BrnnBaUVSFq5ROlJ%2FhMPy0WU7Lzwvn51Kh52%2FHxGdHZ0eCU1OyW9NTLGn5Ye0jGfxGJsUaV2AXB%2F%2F9urhZThCMs0HA2LVg1ILRgvGSwFits%2BlawDLeSpuuhKjo9Caq1LPUMima4I2ZtdEkEj6qkryLUPlWOTUk%2BqCeLIpVM1NIuc4nqjFxXKQWU5DpYzHgl0XvOOyRZ%2Fzhx7DCPEqONqqamHPjTyopkWKkJurFQ3Nf%2Fv3XBAl87w9CYJsptQS%2BcAIv60sbdYD3J9qs4JiBqd%2BVKj1YrVhfwsgAK1matFj6rnWNHY0%2BE2wTwKBeFyBeflo9gkR023h%2FKCdz00lNOhXVuMOw1aZNLVunx9Y%2F0M0zGhWtHenSNxaCUyj8Tw%2B1a7BMcARkb9wh0E3WVjPPBFPzu3ICainczv08yWjU84dBps2UWmROD5kLYSmGsSLleNjsSJXmkKQ65vwE8hwgoqeNYLlkSoyc12jDSbEuKoY5RzIkVYs%2FaQoIy7fSmc8PytpDdX8WPdB3n2RGd68n7XNMzBqvrlG%2BCkV1VlivipoeYMNBABvYjKsF7IUDtr0tqBxDO2bKu9hPMxptg670K4rlgvu1mqmnyDnc%2BwOpWl0k9ScwxxJUap19CjKU86RcsSr6ptNaqn92%2FNZ2POlXg3rTFYRVaVdvuiP%2BWTgIXW021dL1wun6i5rY0YQRo%2BlqEqVrF8%2FZqdqRVdUzUUXAKriJDJCE9jwxK0%2BPvBXOxMois4ATXsbRjlqLubxVdnBL1iPIX51ib6jcfGQuTw%2Bhh%2FtBT4RQmzS1CL1whP4u6ow1QmvbjhI4%2Br71rswpzAjcIMoqhO6k%2BqAOqsNtoToCVSkAkOcclcBqBLRnx2yhC3hFMre7dIpZJ9WT3Wgf6am1FGUo5ekEoeq7g0A1tKN%2BC9ULh%2BqXahO6Qmu1Z%2F3YFvNzb7XvGvJHpEpCHttMX9s4j3M57i9LmKQl35VbpTpofHbMRpjnSasp9d3BiekwRZRbGetWpQR%2BVUa%2BmySB%2FdkgBLaZAUvgCyfwsr6K8jITBGFXggCYmZ6snNpKAcoY0kht5mBLUHGTQdD7rvRarCIDe3bi5gasEaK1qLxIdWSNt4OynudNNm%2Fgh0MAFhJDUxhvYAOvXcTFnETmruoL1PXPTYtKis8zY8K2eIMzkDxV0hosJemqe37GODcE%2FR9kbG8%2B6iy3HzfB%2FjZfWx%2Bcvgtmy%2Fn9AXljuAZcWa%2BN2gStwA6j%2BIvwfE04r7Qqk5tRzCPJj5iVwER09l3zWXZZSBWdEwL2tRtyjNT3J8qaf5OCygmCh6YP3Hi3dwfm1lVWxi91e6c%2F%2BNYfevmDP4Y%2FeMHBbLcX3J%2FYHwLrD738IRjFHx6CwQERWofo5RDhGA7hh7dDO4TXM4LI2%2BO4K3IH8627c%2FvDw8Cvi%2BILUtYZPuYMo0QPh9Gkf9fwhjZM3r7%2FBN7TM9i4du8ZJdb4qPeEg3tPz8jk2r1nlMBkNvSbyO8blvhX7Q3H0lUDhyXe0N7QNy65cm8YJ6vhex97tXje2wVO4D99I5Mr959xsiAf9p9gcP%2FpG5tcuf%2BMEpt4t0O%2FjoK%2BwUlw1e4QjBKceHfB0O7QNzq5cncYODppTKJ%2B1KR9A4YrN%2BkoAYPo0QP38LAv8MOrdodwFOC3Jk3%2BNjEavF3gBP7T9w1x5f4zyvj14%2F5ze1r%2FEafVv0Wvb6%2F%2FU%2FX%2FBw%3D%3D%22%2C%22effect%22%3A%22pop%22%7D"
+            title="Correction du diagramme des exigences fonctionnelles du Smart Knob"
+            loading="lazy"
+            style="
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            border: 1px solid #c9d8e2;
+            border-radius: 8px;
+            margin: 10px 0;
+            background-color: #ffffff;
+            "></iframe>
+        </div>
+        <!-- ========== SEQUENCE 3 ========== -->
+        <div id="sequence-3" style="
+            background-color: #0b2545;
+            color: #ffffff;
+            padding: 16px 20px;
+            border-radius: 10px;
+            border-left: 10px solid #f4a261;
+            margin: 8px 0;
+            ">
+            <span style="color: #f4a261; font-weight: bold; text-transform: uppercase">Séquence 3</span>
+            <h3 style="margin: 4px 0 0 0; color: #ffffff">
+            Le tableau des voies de solutions
+            </h3>
+        </div>
+        <div style="padding: 4rem;">
+        <div style="
+            background-color: #eef5f9;
+            border-left: 6px solid #0fa3b1;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 10px 0;
+            ">
+            <h4 style="margin: 0 0 8px 0; color: #0b2545">Ce que c'est</h4>
+            <p>
+            Plutôt que de choisir une solution technique « à l'instinct », on la
+            <strong>compare à plusieurs candidates sur les mêmes critères</strong>,
+            notées chacune de <strong>0 à 5</strong>, pour objectiver le choix.
+            </p>
+            <p>
+            Pour chaque <strong>fonction terminale</strong> du diagramme des
+            exigences, on liste au moins 3 voies de solution possibles, on les
+            évalue sur les critères déjà définis pour cette fonction, on additionne
+            les notes, et on retient la voie de solution au
+            <strong>TOTAL</strong> le plus élevé.
+            </p>
+            <p>
+            <strong>À retenir :</strong> le diagramme des exigences dit
+            <em>quoi</em>, le tableau des voies de solutions départage
+            <em>avec quoi</em>.
+            </p>
+        </div>
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Structure
+        </h3>
+        <ul>
+            <li>
+            Un bloc de <strong>4 colonnes par fonction</strong> : Voies de
+            solutions · Critères · Notation (0 à 5) · TOTAL.
+            </li>
+            <li>
+            Une ligne d'en-tête fusionnée sur les 4 colonnes : « Fonction N :
+            <em>verbe + complément</em> (Au moins 3 voies de solutions) ». Le
+            verbe est identique au titre de la fonction dans le diagramme.
+            </li>
+            <li>
+            Sous cette ligne, une ligne de sous-en-têtes qui répète les 4 titres de
+            colonnes, identique pour chaque bloc.
+            </li>
+            <li>
+            <strong>Au moins 3 voies de solution par fonction.</strong> Pour
+            chacune, les cellules « Voies de solutions » (son nom) et « TOTAL » sont
+            fusionnées verticalement sur tout son groupe de lignes.
+            </li>
+            <li>
+            Une ligne par critère pour « Critères » et « Notation ». Les critères
+            reprennent <strong>exactement les exigences chiffrées</strong> du
+            diagramme, en même nombre pour toutes les voies d'une même fonction.
+            </li>
+            <li>
+            Le texte d'un critère porte son libellé puis la valeur mesurée pour
+            cette voie précise : « Prix (45,60 euros) », « Précision ± 5 cm de 0,1
+            à 6 m ».
+            </li>
+            <li>
+            Le TOTAL est une <strong>formule</strong>, jamais une valeur figée :
+            <code>=SUM(plage des notations du groupe)</code>.
+            </li>
+            <li>
+            Une fonction peut avoir plus de critères qu'une autre (3 à 5) : la
+            hauteur des groupes de lignes varie, mais reste la même pour toutes les
+            voies d'une même fonction.
+            </li>
+        </ul>
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Styles et couleurs
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+            <thead>
+            <tr>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Élément
+                </th>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Mise en forme
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top">Police</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top">Comic Sans MS. 12 pt gras pour le titre général, 11 pt pour tout le reste, y compris les en-têtes de fonction.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top; background-color: #f4f8fb">Fond par défaut (titre, en-têtes, critères, notation, total)</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top; background-color: #f4f8fb"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: middle; background-color: #252525; border: 1px solid #888888"></span> <code>#252525</code> gris très foncé, texte blanc</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top">Cellule « nom de la voie de solution »</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: middle; background-color: #1F4E79; border: 1px solid #888888"></span> <code>#1F4E79</code> bleu acier foncé, texte blanc gras : fait ressortir chaque candidate dans son bloc</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top; background-color: #f4f8fb">TOTAL</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top; background-color: #f4f8fb">Texte gras (les critères restent en police normale)</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top">Bordures</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top">Épaisses à gauche et à droite de chaque bloc de fonction, fines à l'intérieur d'un bloc</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top; background-color: #f4f8fb">Alignement</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top; background-color: #f4f8fb">Centré horizontalement et verticalement, retour à la ligne automatique sur toutes les cellules</td>
+            </tr>
+            </tbody>
+        </table>
+        <h4 style="margin: 16px 0 8px 0; color: #0b2545">
+            Mise en forme conditionnelle
+        </h4>
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0">
+            <thead>
+            <tr>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Condition
+                </th>
+                <th style="
+                    background-color: #0b2545;
+                    color: #ffffff;
+                    padding: 8px;
+                    border: 1px solid #0b2545;
+                    text-align: left;
+                ">
+                Fond
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top">Cellule Critères ou Notation vide</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: middle; background-color: #844848; border: 1px solid #888888"></span> <code>#844848</code> rouge sourd : critère non renseigné pour cette voie</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top; background-color: #f4f8fb">TOTAL &gt; 0</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top; background-color: #f4f8fb"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: middle; background-color: #576547; border: 1px solid #888888"></span> <code>#576547</code> vert sourd : la voie a été notée</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top">TOTAL = 0</td>
+                <td style="padding: 8px; border: 1px solid #c9d8e2; vertical-align: top"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: middle; background-color: #82524A; border: 1px solid #888888"></span> <code>#82524A</code> rouge-brun sourd : voie non évaluée ou éliminée</td>
+            </tr>
+            </tbody>
+        </table>
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Règles de contenu
+        </h3>
+        <ol>
+            <li>
+            Les critères d'une fonction reprennent exactement les exigences
+            chiffrées du diagramme des exigences pour cette fonction.
+            </li>
+            <li>Chaque critère est noté de 0 à 5 pour chaque voie de solution.</li>
+            <li>
+            Le TOTAL est une formule <code>=SUM()</code> des notations du groupe,
+            jamais une valeur tapée en dur.
+            </li>
+            <li>Au moins 3 voies de solution par fonction.</li>
+            <li>
+            Le texte d'un critère inclut la valeur mesurée ou constatée pour la
+            voie de solution (ex. « Prix (45,60 euros) »).
+            </li>
+            <li>On choisit la voie de solution avec le TOTAL le plus élevé.</li>
+            <li>
+            Le texte ne contient jamais de caractères <code>&lt;</code>,
+            <code>&gt;</code> ou <code>&amp;</code> littéraux.
+            </li>
+        </ol>
+        <h3 style="
+            margin: 22px 0 8px 0;
+            color: #0b2545;
+            border-bottom: 3px solid #0fa3b1;
+            padding-bottom: 4px;
+            ">
+            Cas concret : le radar de recul
+        </h3>
+        <div style="
+            border: 3px dashed #0fa3b1;
+            border-radius: 12px;
+            padding: 22px;
+            margin: 14px 0;
+            text-align: center;
+            background-color: #f7fbfc;
+            ">
+            <p style="font-size: 2.2em; margin: 0; color: #0fa3b1">▶</p>
+            <p>
+            <strong>Vidéo : du diagramme des exigences au tableau des voies de
+                solutions, le radar de recul</strong>
+            </p>
+            <p>
+            Présentation du diagramme des exigences fonctionnelles du radar de
+            recul, puis comparaison des voies de solution fonction par fonction.
+            </p>
+            <p>
+            <em>Emplacement réservé : intégrer la vidéo ici.</em>
+            </p>
+        </div>
+        <h4 style="margin: 16px 0 8px 0; color: #0b2545">
+            Diagramme des exigences fonctionnelles du radar de recul
+        </h4>
+        <iframe
+            src="https://viewer.diagrams.net/?pv=0&amp;grid=0#create=%7B%22type%22%3A%22xml%22%2C%22compressed%22%3Atrue%2C%22data%22%3A%227Z1bb9s2FMc%2FjYHtoYUujuM8Om67FViBYRmwZ0aiLa6UqFBULvv041VXOnYV11JstkASH1EMSf354%2BHRkTIL1%2BnzbxTkyTcSQzwLvPh5Fn6aBYEfeB7%2FJiwvyrI0hi1FsTI1DHfoP6jPNNYSxbDQNmVihGCG8rYxIlkGI9ayAUrJU7vYhuC4ZcjBFraaIQx3EcCwV%2BwfFLNE9yK4ru2%2FQ7RNzG%2F2FzfqSApMYV1xkYCYPDVM4eeZt5qJn71ZuKaEsJbJHEif1xCLQe2M1yz4clj5qgsUZmxYFbJxvVp0xQV7MaPFz%2BIXhn%2B4fUoQg3c5iMSRJ64NbktYivknn%2F%2FIByOHX7OCX1xtoaTMYhjrTxjcQ3wLou9baV8TTCg%2FlJFMVL5BGBvTLAivPl1%2FubkRtTJKvsPGkU%2Fe%2BvPnQJxBMtaw%2Byvxn9ujkj7KX%2BpVp5vLHOrT7nT3fPNZadRf8s9qAB4BLvUA%2FAViQIXcIf9CYVRiXQRSBp8bw9Yf9nrwf4MkhYy%2B8M9JQ1tLfdWeah365krqqm9MGT3bPvjX2gD0PNhWdb8mAG7XGlBH9yskt6isrw8%2BBqwtBJtO2pcRixH4wIf1%2By%2F8ynny3yzgTQwXi9vgy5dfO4LQGiF8yDdYTjhx9EcVNkwvPT3MggUWPWbgHgtJ3BMaQ1Xp4qEUM%2F7Wr39sXdzquOjuVatQQxWvlIr4FcpBHKNs2yo6b5Wqr44x6iasdJX8culfV1tUNz5EBGMg5%2Fuq%2FvG2Wf1iq7%2BrUbgnfB3oGmnPkgjB8uuetdoVcWFBaql9HcxWtxQ%2BlIjCVKiPG26r2u6r%2BlfRQzlbh7PVDUVikkImVhMKkKzWw3yd4TOXLySqkPioquDTQbSp3Uph7De9b4l%2FqDNiPonJ5vebD3jzEefIjqYq5vA5ueCCDQUOYfaIqFgX5aDo%2FqpTVa%2FFfCWl6HuOMDGjIETxUjBZ8zKFzf7GBw2CMNqutLCreWDsx0Kjb2Pjss1G32uz0fePgsY9XIx8B0YHxomD8RssSqpmPxAgQQUDWdSa%2BafG30cLAFPZzH4rPV6ZsosvjwqJCeLOF6yo18AiuecnRrg6IcelQGJOSZQMoN2b%2B5xT1eIIFYhkcgbzNol9iWa66bc4oMsWBJesLk3R87lgug3puXcaSAcO0g7S04b03x1HFWUbQlMgKDCqo%2Fox6Le1ci%2BtjioqilJ7rOJrBHIGS1oYVitftDq5IJQhVbx8s2v65m6nqh8pQYbICr5ruSLx61d0r8d7hnHg%2FRQcHxBOcEB2QJ44kL9KACsiN9xL7pdhVACBtBGxbIEyhQVDrOxGCRrriHE4G661xJ33WhfFHNVeNNIYj0AGyrPxSBfjBA5scXuHQIfAKSFwtdkgvmmeUuQgsEUOgGpnv5lqb61904Nwd3KP07rjx2WKMlIg5QrfKCMDfFqeTbx2%2FnN8z73YdZ6nw%2B7UsYvFHKTGXUtBhtSWWEZBC5IROi6CLd5nwWsBuG6fvicleZxT8ozSGmZe3KSvcEsbMdsJIjovUVHoBUUFKQynN5reDyXUh2VigEF6pk4SJe9BJo%2FlQFTFzgbjXe%2F5VBgPHcYdxieOcTEHZSbCIypKPjoVFPeT7eRID%2FvtR1mMHmQ8odt%2BKNHH4ZZwMBqrxFsBS4SrbIWGIx5RxERtA2Knb%2B8lN2cNZ1q517As%2BiHe5mYhVl2HO1zy8%2BD3crQQsCO4I%2FjECf4107N9S3clT3lAOISdpITROG6heA5pCmtXnBjoqUiJareyenUxzsuy9nbbHY5BVhgf2OvkoJ0HE%2F2RcslCFxJ2SJw8ErlLx11BanhBIfdx96eWnhqEtjBxhcID7npJ52%2BDnuuO6pz%2FV3qrcLlzLTiRt7sBEe9II9ii2y1yNnQgWdNd3sTjHu49NWkmMqbRPX%2FWvJkorz6oI9WFTm4rafdX8sHT5c5kVfDGCXWELmLtVoWJrwp%2FUmI85QkuBZZwdW4avNzWqWgRSbknDDJWmDXiBsOISzHTkQud0SbiCWluHjWBVWabOqpP1IlkUNUmZqcpL5MoRrvPaMv9EC5%2FlAAsl75mGvKeRBEoNj%2F28mptiRIS6WUlIllcRgw9NtYJlvAVWcWYXom%2BnMnyMV6y3dwtIG4BmfYCssIiufaAR9ROvHjM%2B021Ov4EVfuKlXpYBageVayDWbU2ZJBuzwhs1%2BNES%2BYuWuKwNnGs3dW746IRMtGucol72cWaGr2N86mxZwufbAHlvjGqgsS7t%2F67e2QeSD7CY8hv7ixTT3NIRarJIpxQEIOc1W6o9mP37wwskfJfKqe58QwgpL%2BeDflHyuGbu4iII%2F%2FUyc9I9L2H913%2B38nxbgmJbDiZM9TNT2m32NPP%2BUWwKACi1f1PLuFIAL56F4UNh4W5cVhS9Vj3M29kNir5BfC72SHn%2FtCfP1LK3twlfDhqT53aXX9dXpIoAXTby3A4ObMtyR1Fs7225trCDpN40Fp41HxPoDQPHmH0%2Brah4XPrnETbvdbz97h%2FUrreXna7ELJj98TZvZbYm1wA%2BaMlhKwIbW%2FpMQLFR6CzfN2qSoVpRERMy7o3Att5IV5Rx3gujdDBT8oS2Q%2FpzZVjtGP0xBlN0rSUMVMBCB0Q4OIYEdBX%2FVZqLiUg0y9ps7zkSLcdI4BUJjTvhYqInBzWOaF1wNr2VOK5vUOu996iI91x3M9YSDVRYWzeK%2F7KXUgV6JKm%2Bg3bTCz9umDe57Oo2LySml%2FXhGxJBvDn2tqBaF3mD0JybfwXMvaiX2QNSkbawH%2Bdu72XbF%2BHi%2FVq2SFyDDeglFI4gMcHyoBC4UA8tsfVdkV31WdqXVEKXhrn5gTJOzf7zqxb9ac4Y9ZI%2FZy3BffBvHfbLq3DKr0ZXKeUrurl7rGV6q6G9wi7QEiDo4o%2FcOK%2FWPEv3p%2F4w6OKP3Tiv1jx%2B%2B8Q%2FfOjqn%2Fu1H%2B56r9%2Bf%2Bq%2FOqb6TaDGqf8C1R8Ek1P%2FARPAH7jtNRvcpvyrP5nh9D9x%2FXeUGpooyxvkP7zKkdBv%2FnTAcZTvtrwXq%2FzpSf8A9QdDuR9Y1G%2F7g4JO%2FdNTfzc2cwz1zyen%2Fr3SHwp%2Bq%2FQd%2BIdIf5c8BlzNgdE7%2B9V0wbuLBdlyciA7QP3h0GU8tKg%2FdMv4u1B%2FL8p8DPn73uT0v1f8Qxdyq%2FjdQn7B4n%2BXe7j5UPjPLfqfO%2Fi%2FD%2F13b7IcRf%2Fvbxc3Hwp%2Fq%2Fgd%2FC9Y%2FG%2FYTYwl%2FqGbXqv43ab3gsU%2FvW3vXvEPzFixi98lrFyu%2BIOp7nmlXeaYKKupiYI8%2BUZiKEr%2FDw%3D%3D%22%2C%22effect%22%3A%22pop%22%7D"
+            title="Diagramme des exigences fonctionnelles du radar de recul"
+            loading="lazy"
+            style="
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            border: 1px solid #c9d8e2;
+            border-radius: 8px;
+            margin: 10px 0;
+            background-color: #ffffff;
+            "></iframe>
+        <h4 style="margin: 16px 0 8px 0; color: #0b2545">
+            Étude des voies de solutions : mini-projet « Radar de recul »
+        </h4>
+        <p>
+            Tableau réalisé par des élèves, reproduit tel quel. Les cellules en
+            rouge sourd signalent les critères qu'ils n'ont pas renseignés : c'est
+            exactement ce que la mise en forme conditionnelle doit faire ressortir.
+        </p>
+        <iframe
+            src="https://viewer.diagrams.net/?pv=0&amp;grid=0#create=%7B%22type%22%3A%22xml%22%2C%22compressed%22%3Atrue%2C%22data%22%3A%227Z1bc9s2t4Z%2FjWf6XTiDM8BLW0naTk%2BZJm33LSPRMfeWRJeiUqe%2FfhPUIXaAOpS01lK%2FZLXTVKFkW9aLlwt4ALy40JPF%2FbdteXf7UzOr5hdKzO4v9PMLpaQSov9fvPJhcyXsLrxr69nm0oMLr%2Bu%2Fq%2B1X7q6u61m12l7bXOqaZt7Vd48vTpvlspp2j66Vbdv89fhlN8189ujCXfmuevQ24oXX03JeJS%2F7o551t9vfQvmP17%2Br6ne3u58sXbF5ZlHuXrz9xqvbctb89eCSfnGhJ23TdJtHi%2FtJNY8f3uPP5eU%2FPLt%2FY2217MZ8wXT7Pt6X8%2FX2l3vx5rfnL%2FpLz1%2B87v%2F8%2FZfvh%2F8Pl17%2F8uNvb77%2F5ed44ad6WV%2Fetc3%2FVt1F%2FCGuXNxd6Os%2F1%2FGtX%2F9azso2Klz1f%2FxaTdfzT1%2Bx%2Ff27D7sPtW3Wy1kV35fon%2F7rtu6q13flND77V9%2BM%2Bmu33WLe%2F032D2%2BaZfeyXNTz2IImzaKexrdXLlfxnb3evmDbcOTuCybNvGmHH6ZfDv%2F011dd2%2Fxf9eAZexX%2F7Z8p5%2FW7ZX9t2n%2BUVf%2Fk9fuq7eq%2BEVxtn1jUs1l889er%2Fm3Wy3f9JRN%2FUj2fP%2Fh%2BysZ%2FP3lHavf37a8v9x9I%2FCHV%2FT%2BqKfdtpDdX1Syqrv3Qv%2BT%2BUaP68Ohvf31sodKZ7cXbB83TmK0ztq54t%2F%2B%2BHxtO%2F2Dbdv6hHcmkHb1sltOubpb9VRlbiL6K2lSrdVvFljEvY%2FOoV1257DVWbh4bxdv%2BGfcuPvrmah390tSDpDp%2B66auVrsmtWrm6%2FjNV%2F%2F56toReDsJJmkoVmXaiVUA7UQl7eT3rK4s66mySu3SG4DO6Koh%2FK8TXSdt3V1M9MVVaCuW8wg592I9IagyWIKaRNCfm67c3tC%2FEfGOHsWNDyzfhI%2BQV%2FvPyxuw1LWJum9%2BeXP1I%2Bt4uI7Gfl5Hj6WjS3R81Q6%2BLKb1avDqpx2ri4m6uI4dMhsHSItd4e3f4EQ%2BNLWL3a8nvnx4sbK7r3cPv1aqzRdzYzr5nu%2FFuHu%2BEwCtySetybKIAHf2jIgBS8OQ3hHmEWdsfboYBmCpryNa2dwO2MXgLlZ6pItBhuIFuxjDxTkRAxpOSbncr5u6vhshpxaOtXjBfoXwqzeEfpWSDYti2IyKeIZVmZ54fZ%2B61PTaTmKlF9W6bRiMANhVy0Bp1xR1KVbxdLvmVMSza4q3JuVd11tymJpYxSmKT52r3YBYxWp40bum%2F7CXUaqvQ3r50rzwBcW8VW64lAXXsoCYkZApC5P%2Ba1HVemeNz6j68B1qJFCW0dnjyXw4KgsbwMW39pMLtFOUBTrFWIZVBCjQGRXxCvSRHMs8Ilg8JIaysBGO0sIpwxKs4ukWzqmIZmF1BMOS7FYQt1pK4KwYYOG41RISZzUWYEV%2BZZhfQbq1oMTNSrNbUdxaEOJm9RS%2F%2Bn5505aXvYSxu8x0CpZO5UZBeTrlHYTQGTplmE7h06mczh5P5sPpFMMpmOprNeXskfI8ssWovjkV8arvkXCKlYbwa6CEyYpJFI5fAyFM1keQKFYZwKtOUVJjLdmrGF7NqYjn1bEcyjGCAjSqpwTGmhEUjlE9ITDWKYJ6vimqXTXdkqh6OVtPu%2FqGMRQ0hsqNdxAxlLZfr2PPSaFyMuNRKH0UhZoIZXnaFqIKe0k5EaQZRaFU4ZyKeFX4SBSlku1%2B%2FbuZWN7xB%2BRkSwmVNW%2F5w3GyJYTK5ghI9c3evdPb%2BuamrVqO4gBwbxCUiNmk2OqSVTzdvTkV8dw7FluFuP3PX7xQF0FdXE1YaAC7GkrKbDRvL0CxqyGkzOap9VPredeWq1y9%2FW5y%2BfpXYRhnQeOs3JgJEWeZFGcVjLPwcVZOZjycZVKcdaLIDz7JZbOscnKJ4Z%2F9M7t8YH3O5M4gQD5O%2F1TGq9pnvH6%2FXHXlfB63UL9sq67e5r0O8Z4fVttMyAVnvtKWW%2BvOmPpqAse%2BkilLG%2FxqCk5%2BhVbUFedMfrWCo19x9S30OaNfJWe%2FgpEIIc8Y%2FmpT5vTrvr91038E82oRf5E0xFVdD2W372zVS9Yd4AZNunzKpgRKsooAt2HK5VM2JVA39f2uyq7Wd3dN25XRvf3QKerwvn7blttOcjoPpPo70TaP%2BXJ%2F1MrW7MLGp8TP%2FX%2F%2FSb%2FW80YimJuAGrt6AyTn16YIS7OKp98E1MjVGzAipoTqAT0RvUT17B9q%2BOWmgnMBh%2FEuaeKr5aB1HO9SJr7a8KR3B3velMNI2W9qenx8fd1WLPXphh2d%2BQoz0uJdgCiGHZv5CnNWSsq1rsvl4NNpM5%2F3fW2Oy8DA0aPjXAPEVIOTPLVLMbWboq%2Bxca4wMh%2FLvjb9ZsnkC6gOW8qlkk7zoBelDlvCpZLu30K%2Bdl%2FH7efku0DhCNGXszx8RrkLFI4OfblT0ReXcCDzGku5fNp5LuEY5s2piFfCmX2d0bBDp4aMfTlmXyiGzamIxr58yr5eP1qL23eyV8OJvi%2B3%2B%2F17RZmGwdOw3EgLkYb5lIZJyTiMAIflhMbDYf7UpWCae9NAxVlTziR7zcUZpThrwplkz0Dsi7sL%2BEAIxDwDMZy7gA90QMzzWrB%2Fh3cdaSC857VgKN51lIHwnnnYOQ07NhEeBqUwD8Mx7MhEeBARQ8rD2vp91a2YecEzr9xgCpF5hQzzEsy8CJhXTmg85hWOXwK2Hxb3n9i9ih%2FXejmkZXIPGqIge0k5oxw4TR6lIOdUROtBh38LA4uLi7j5QNwEnCBEYIG3Q%2BLcBJygQ2CBEdi%2Fw7tBUeYZBEZgKN7NqYhXwBmBndOwzhAisMAIDMewztAhsCJFYL9X82nbMAKDR2C5sRQiAisyCEwzAiNAYDmh8RBYob64hNtjc0qDBLkp6qcybvU%2B4%2Fbq5qae3m6CbcvYvan7rs5yyqG2xPl7Up0x1bYwnGpLJy1trG1hOdYWXFJlz5lrWzjOtUUW2BRnDLYtPAfbgilp%2FRmDbYtw%2BFFofb%2B7f0Xhh4MNb8u2nD68WaenMA0vjvNDd%2Ff9%2B%2FnkK7jJQNzdPeUEUMFnICLdwz3hDJAUKZX6cb2ol81q2%2FkqUjP3v1m0rBhOm0mejFPGNj4jlnXH%2FTYIZytN6WwpJFsbxdo5HRGtncKqN2X%2F2%2BZPJ56YTYnuO3UTuT2smCU%2F3boF5cyuFLw2C8m6BeHcrhSGj6hFsaPWlPO2UljWEcWOWhPO3EqROdhwm9pRRpb14%2BQ5T%2BJiIOjRUbY7gnGizinRkpancRGmcRPcNTbMFkjoI4DXPd%2B4IQqwC6T9YaZUSAXYEW73lfIISsV%2BhfCrkZR501Km6MmwjgB%2BzemI6Nfx6IltCmJT0kxZKRkzIdmUMlVWSsZMOHakTYyVkjETjh1JM2OlTDFTeTevo4yLsu3ubuMCYeZM8JwpN5jJc6Zdiv6JQmc4k2HORMCZckp7RKGZM52rApPGwkrJnAmpAlMGw%2B7rwiGcSW7iLfZLmTedBl78BOZkT0qMFS9%2BQnKypyTGigkUrU2dIgXFigkUjk1zOiLalAkUkh0d5VYvqZhAIdnREe7okupzC51e8EInDAA1PrEVhksoXuh0JgA1OrIVSOgjAJTb7gRwPPMOUYm9IN0BoFISpVhHgErsBeUOAH0MidpnrTJ8gjKvIcXImpc%2FIZnXUGJkPR4%2ByRgp1b9tJR48MjHBiPffgRg4kNJjnWIpyTpCGDhQ0mPNWArHjkFTHh0kNWMpHDvmdMTDUjrFUj%2BVXVvH%2FL9N9BuDKRwwlRv0YIIpnYIpz1yKgEvlhEbkUjp8cUGqR2djepBoWqmLp6JUzcco1Xn8LfcZ8YtyWX%2BM4RKrZtkMD%2BaZM5u6el6vyq5at5y7Slp%2FHzesInPUJl7qqjSCY1eplC0EYeaqNJJDV8G7yvrzkiKOeIzi0FVcgbX%2FvMB4QyGjOXQVSkljP6%2Bkx1MyZUx363q12sTai9l60xvL9LRi6xKza3YvwO1ZCkU6w2P43DyUu3BWRzxAbFIi9bLdzMv%2Bua6WH8FUu1ttsdz4mpU%2B3bFjI2SA7tMeGlX818gYjAkmYBl2ZIIMkIopcLoul4NF78pYdDs2J4Q596mzROYs2JwY5szJiGdOK3iaDseNpAe%2BSCtZRxw7Up7rIm3KkG7Ldbf5FeYD%2FeepVljwmx2%2B5CdaDcgEnNVf7ziUcqL1U8aUFdoj6nw0ZXqEiodzQpg5QZVlT7olwFreK4tTlj3llgDLzOlsjt3nMxF1pJk5oRg2JyNiP5qZE405DSkQtsyccMxpKIGwY%2BaE5MZASoAdMyckOwZKBOxS5vR2%2FfffFbMmeNY0%2FlgdGAbhvuKsprOyptGn6gDpfDRrKsSMyRJE8dWS9BwAZ3m%2FOkrxzemIR5Yck6XzOdaRrg93TJZwDOsoV4E7Jks05ixIsa9jsoRjzoIS%2B3omSzhuNIqU83omSzh2zOmIaMeULPX916rrMmlMm%2B7tfJt52rV13%2F1lAAUOoHKjG0wA5fXXO0w9K4DKCY0IoLz54lIljt75D3PvtE9lSth9psSLbsiMKNdds%2Bx%2FTv%2BwWu6WjxXLqn1XV5wYQVp0rTtrZoR3nBlBpy1taoT3nBoBLakrzpoa4QOnRuAKXOhzpkb4glMjwLCEkOeMjQgpXXpTLVfZJH8ln%2FV1WPzOMp9%2BR6YOigh8Dh3KjZc4KCKk9On7%2FrNZPhHj37%2BXiek%2FThYbwLSONP478Kl0SKZ1lPHfIeVIr9r6PrVqBIuTeJq3qNZtwyMfCMtKSXqQZEgRl2AdASyb0xHRsilwmtWLTcd4lRpXx1Y3HLYxJNQPjzSfugHmYUu6DDF49jCOhy3lMsSQUqhX5XJZlZuFw%2FOybjPTCN1t1S54ohYHLR%2BQS%2BFBpvBCSqqk4LlahBMAPsVY45MpYJQuDgBZTLGgKrOiPY2yYIqFU5kV6WmUxeEUq%2F99Jp4hFohnaQ%2BhLBhiIXmW9BDKYizEGhiWZIYF6VjaUycLDnhCcizpqZPFYQxLuXtp7sUzPWVoBWFarUnBc%2BH5JAAU02pNCZ6Lo6DV3W3TNe%2BbeVcO%2FeeXjK9w8JUafX4lENTI4KvA%2BIoCX6mxJ1iCKL3%2FaWPwVd8ZmwhGWFB12lNOLinBCAupTnvCySUljkBYjK8g%2FGqUIPUr4yscv%2BZ0RPTrWHylXORXjvkVpGWdIbUsH4qHZFlnKC17GL%2BKuOv68mLoYA0Lr0TG3fEX%2BOyL4k%2FdvIjXb4H434qR%2FBpoLOW5ZKP4P6djwJMxl0rV9R9OzXALA27lBlBZuLVX5kR9GW6dC27lpPZ4SstD4NalMgy2QKpuIO11SwZbSFU3UPa65XFrs3iDIYhnnQqknmW4heNZpwKlZ8fCLWmZa0G61StSt%2FK6LCS3ekXp1sO41jAE2%2BwotFto9elLNmHq5YfYn%2BbmcLKt%2FdhTD3Yj6BPbg%2BdTD1Bs7UeeegAkY4qrnn9YlouGYRUCrMoNivIrsQoFom4GVhUMqyhgVU5qj6e0El9c6uvR6Z1Bg%2FA%2FJZ%2FKfXX73NdXbbOFDO%2FiSW1iPmR7flhtwyAXm4Njoj%2Fqvj0v7javbTdBoFW3iYwdIiPFo%2BjtvnPVDS%2B57%2FZfsm5XnCFLm3Qn1TlDZJVSHCJLKC5piux%2BhQenyAJqquw5Y2T3wyCOkUVT2BRnzJHd4yvOkQWQ0voz5sgqlUKt3el%2B9aobenN7r87L%2Fo%2FpbTnvO2GZ%2FcPKX0zUxbWYcjMAuGcTB832bYwhNcqtmTZpVqlwgKF775aLu%2BEX1%2FcqkoJhw2IyvCrfrpr2blvAZ%2F%2FwVWIVbwv9b3v7n3ya7W4LDTeoE%2B8MY9NsYQCpKvjOgHRnGBlnC6OjFp%2B9M5Tr%2B6HEN9McZJmt22oLYjIOt%2BLScbsAMbhUpAbXvAIMyeBSkRo8BWWTZjlbT7v6%2FcdVYOJBUmauSkftxR9DV94vLuXmwQ%2BXXLthrE0aCaQ0LxTDsjZlJtB%2BsP9w7cl6W72rHQh%2Fnzteb8i1jnNU%2FVtgRA5jYkUaEaQ0rx9DMrGizAhSOmVt103d1UPX%2B9Wbly94xQnChNb47Gqg%2BUqdkrSvx6%2BkS04%2BReejs6uhlA5Q8Dw2WobngBWaNhxIMyLDqtCk6UBGwMNzGfve3BpAbK1pM4QMgzEkW2vSECGjDiPfrDCAVcdmB8GsYzAaevXvf42OwZhgAppTR2YHAcloQBB2JNjP4orgS%2Fnsh%2F7%2FTK%2BBTF2Q0mtj2dQ4pi4o4bVxY%2BE1e%2FR0jxqjSAuvZ4%2BieDSnI2LhDU%2Bx6d8njKYx0LQaH90FskLA8LGK50LTanR0F4jSVkCh6b6rwGQasDzTkmnLCAurPpOSaatOJ9Os%2Bun2tYp0K51lrIXjXqsoN8xZwwCa3KmWFEBbZlVITrWUANq6QwE0exXAq2NXRQOJzMwKyasjF0UDyRiYK9N51ClSrmwL9iiKR3M64nnUiSe48tX1a%2BbKGFzZjOXKMoDQRvcVU6bzYmUzEitDCa3AVjw7XvEMWp4tKVd2vLEQqz5bSq7sDHPlf4N9vSDlyo5pFY57czoi9q4dc2Vyp2pSruyYVSE5VVNyZReYK5%2FBq46UKztmVkhedZRc2QvmynQeDYKUK3vJHkXxaE5HRI%2BqJ7jy3by6r5ksY5DlHJ3AJMteM1k%2BD1nOKY1Ilr2BIsuWwTJofdakYNmnZEqzkCAFWlOCZe8YLP8r7BtIwbJnXIXk3kAJln1gsEzt1EKSgmXPsArHqTkd8ZwaBIPlM3jVkILlwNAKyauGEiwHxWCZ0KOBFCwH3qqH5NFACZaDeSoI48crxsoYWDnHJjCxcviKKdN5sXJOaUSsHNwXdyr48ecxS%2BFBzgUP%2Fqlzwf3%2BXPA3bVl32xPBN6d%2F3zTtotwe1syHeBN2jx63GCUykzuIR3iHwEd4U0krRaA8wDsUfIA3%2BFhGj9AUcShTCD7AG1dh7UcojDfIKSQf4A0lpbEjpMQ7wLtImdJiQ5T6nlSbCUjufxvxQ8NKQ9yWDek5YAXvuUO6%2BRrKY8CKlDC9auv7zICoV3cSh8uiWrfNKnPmbuz7bZ7kdgDh5zByqRPMea1FCqEM6wjh5zBupROQjCliel4v%2Bvf%2BD5hD%2B2dmePNKuGdxmdTwUD9TYbHIeDyebCEWi22fu4h0JQ7Kh0vcVk72%2FD6dnsjznms4iudzOiJ6PgValywjgB21cKSko2AdUeyY0xGNZ2iRAqv%2Bg2%2BbuECx%2F3jbJr9T4JurN4vqXalVeJUpvGU7W9fL%2BD1%2B%2B%2FkXnvaFB9WZUVd%2BzrcIII0khV7S8KQv%2FKRvSsQySntEoQ9FYvd8y4co3YbycE4tmIYhlW5DeDanFmNpmGHWBerWYEjdmrIuxTpCuDUYSrcexrrCMzddbAGXfWb2j%2BUzP2V8BWFjowKpjT3vzkWxcU5HRBszvkKyo6fcc6AF4yskO3rCPQdaZg7rK1d3b6t2%2B50YPEGCp9wAJw%2BedvmaJ8or%2BdTN84CnnNIeUehDwZPihVggZdcKyowaLRk94ZRdKwgjarQci57ispxJnCpk%2FgRnWUtKiyXHSiFZ1lLSYnkYfxqY8QCfBK%2BYAnNuQUqOpedVkjjOLSjJsWTkhGNHpyn3hmnJyAnHjjkd8ZCTOm7F1OY1%2Bupt3WV2Fon%2FiV3k2Xq62ypYzerNI2ZYwAwrN1LCZFgqw7AUMywChpVTGpFhqUMZlo3tQDDHAqnlnnJDoVaaB8U4tdwTbijUaizHknE%2FoWeMBehYL0nJs7JMnlEcm9MR0bGHYSz7TNuPq6j2a6gKyUQLxsSOlEUr3gOIZGJHyaIVEy0cOwZBGYSuFRMtHDvmdMQjWjolWlddvaz7S8EygQInULkxDiaB0hkCxZmtFAQqpzQigdLqi4tsPTZ90wcF8onqp%2FJawz6v9WponO0QQr9a99%2BlimOS%2FAFN666e16uyG6YJtime1bqe7zM9Z%2FWqK5fTipNeacuwdWfNetXacNYrnbi0aa9aW057hdbUFWdNe9XacdorrsKFPmfaq9ae017BYIWQ54x71TqFTnX%2F4SxXD876mq8X9bJarzKTtd%2Boh24eZm4X0xmbGuS2TZoGq3XBFBnn5kyZBrvfofRAxrt8GuxmqDRx5kEgLMt9um0D6QyukWxbHNsGyhlcM%2Foov8THMgjRv6N1P1xiB0M4WGnS6VvDu%2F9wHJzTEdHBKacaOs7Ng6502n0eNhL1r6uYTgKZ15PuJjKWT%2BlE8a6n3ExkUmT144vnPMmLAZhHp7R6kNk%2Fk8IqaXmaF%2BFozpRkjY1pBVL6RJQlxeIPrsEQNXi%2FOZOoBhe87QClCOd0xCvCdjS5kpZ5FZxZHSlmtpLNimNWR4mZ7Uhe9Y2JdEr0VXfdVWxYCMMa0iNNtOVNfTiGNaRHmtgReIpFPd2cYw8tAFKV8ROON0eeWQCkYoqf5uWqigth75o4ho1rYplFgbOo3Pgmz6IsCKGwKYsqGEVRoKic0h5R6FNR1IWa2Icrq9T2wrTs28a85I40SK2mnSqyvMAKqViTzhW5QxZY9a%2BdeMl2hbCrpaXKjhdW4djVklJld%2FzCKsfkCtjBtKjZaT4jDMfBpKjZMbmiMKejxcqOyRWKNx0pVXYpuSoXd816HqtqvRyGq6vh42KAhQCwciMfzMwM5zm19UwEKyc1YmiGC19caMYJQQYB5mZZPBWbUexjM6bNYrFe1n%2BuhxmA1cYL%2FefHwRe0W3OlOm%2FyhRecfEGoLnH0hZccfQEuqrLnzb7wirMvkCU2xVnDL7zm8AswLa0%2Fa%2FiFT8nSXdN2ezj8aXfLCc5Hhrkr00ZbeE45x7r3kmZb%2BJQ23WyncvrB0nKaOxG3f7mJ07Ci6jbrKIQJerua4qfv%2FuZmAOJn2swL75kd49iZNPPCh5ErKSwfMQLpVuJ8C8%2FrnpDsShtwEQTn2iMZ0pMeUBAkC4lkSE95QkHIHK3XzDZzr2%2F7S13T9G%2BC510xWLGhPawgpNRpN0HIE6%2BgE68pkjKkpxWEA5lUX0wYSoFUYS1I1xcHhlJIVVgLygXG4SgoNYnBYeLbCKA2ZGr%2FV24BAFa2pHw5MI9CcrKlxMthLI%2FqXzeRgqEUqGULUoQcODMKy7MFJUMuGEohGZI4yaJgKIVkSNosiyKFUm3TdMNS1r%2Fqm5p5FAaP0mPXLgJRiiLlUYFxFAWO0iNXSEEJfSCO0kyjgMovbThFwTQKq%2FySplMUh9MoE49zFT%2FdMnsCMS5xTEXB7AnHt7QxFcVY9uTi2kVmT7CWpc2lKFL2ZFhIEM9SBlMMy4oZWWAYkjaLwghmT0iGJE2jMCJlT5uub%2F%2B9%2BnJ5ue0IT6u7TaSqaMtZ3TCRwiBSxNEURmjOVj0PkaJNpjDCfHHJFKckDRwRTdH%2FNSL5B899238otz81syq%2B4v8B%22%2C%22effect%22%3A%22pop%22%7D"
+            title="Tableau des voies de solutions du radar de recul"
+            loading="lazy"
+            style="
+            width: 100%;
+            aspect-ratio: 1640 / 2838;
+            border: 1px solid #c9d8e2;
+            border-radius: 8px;
+            margin: 10px 0;
+            background-color: #ffffff;
+            "></iframe>
+        <div style="
+            background-color: #fff4e8;
+            border-left: 6px solid #f4a261;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 10px 0;
+            ">
+            <strong>Fonction 1 :</strong> le capteur laser l'emporte (17 contre 14
+            pour l'infrarouge). Un TOTAL ne se compare qu'entre voies d'une même
+            fonction, notées sur les mêmes critères.
+        </div>
+        <div style="
+            background-color: #ffffff;
+            border: 1px solid #c9d8e2;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 14px 0;
+            ">
+            <h4 style="margin: 0 0 8px 0; color: #0b2545">
+            Avant de considérer le tableau terminé
+            </h4>
+            <ul style="list-style: none; padding-left: 0; margin: 0">
+            <li style="margin: 6px 0">☐ Chaque fonction a au moins 3 voies de solution candidates.</li>
+            <li style="margin: 6px 0">☐ Les critères d'une fonction sont identiques, dans le même ordre, pour toutes ses voies de solution.</li>
+            <li style="margin: 6px 0">☐ Les critères reprennent exactement ceux du diagramme des exigences, sans en inventer de nouveaux.</li>
+            <li style="margin: 6px 0">☐ Le TOTAL est une formule <code>=SUM()</code>, jamais un nombre tapé en dur.</li>
+            <li style="margin: 6px 0">☐ Chaque critère porte sa valeur mesurée pour la voie de solution concernée.</li>
+            <li style="margin: 6px 0">☐ La mise en forme conditionnelle (vide / TOTAL &gt; 0 / TOTAL = 0) est en place sur Critères, Notation et TOTAL.</li>
+            <li style="margin: 6px 0">☐ Les en-têtes de fonction sont lisibles : texte blanc sur fond <code>#252525</code>.</li>
+            <li style="margin: 6px 0">☐ Aucun caractère <code>&lt;</code>, <code>&gt;</code> ou <code>&amp;</code> littéral dans les cellules.</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+      
+
+      
+
+      
+
+
+</body></html>
